@@ -583,7 +583,7 @@ color: var(--Pressed-state);
 }
 
 .modal-field{
-       margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 .modal-label-txt{
     display: inline-block;
