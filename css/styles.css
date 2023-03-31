@@ -506,11 +506,11 @@ color: var(--Pressed-state);
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform var(--transition-duration-and-fund);
     width: 408px;
-    min-height: 576px;
+    height: 584px;
     background-color: var(--modal-bgr);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: var(--card-set-gap);
+    padding: 72px var(--card-set-gap) var(--card-set-gap) var(--card-set-gap);
 }
 .backdrop.is-hidden .modal{
     transform: translate(-50%, -50%) scaleY(0);
@@ -547,7 +547,6 @@ color: var(--Pressed-state);
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    margin-top: 48px;
     margin-bottom: 16px;
     color: var(--secondary-color);
 }
@@ -585,8 +584,14 @@ color: var(--Pressed-state);
 .modal-field{
   margin-bottom: 8px;
 }
+.modal-field-comment{
+    margin-bottom: 16px;
+}
+.modal-field-check{
+    margin-bottom: 24px;
+}
 .modal-label-txt{
-    display: inline-block;
+    display: block;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -602,6 +607,7 @@ color: var(--Pressed-state);
     resize: none;
     padding-left: 16px;
     padding-top: 8px;
+    display: block;
     outline: transparent;
     transition: border-color var(--transition-duration-and-fund);
 }
@@ -626,6 +632,9 @@ color: var(--Pressed-state);
     align-items: center;
     justify-content: center;
     fill: transparent;
+}
+.a-text{
+    color: var(--brand-color);
 }
 .modal-check:checked + .check-text span {
     background-color: var(--Pressed-state);
