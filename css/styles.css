@@ -527,7 +527,6 @@ color: var(--Pressed-state);
     background-color: var(--accent);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    padding: 8px;
     transition: background-color var(--transition-duration-and-fund);
 }
 .modal-close-btn:hover,
@@ -554,7 +553,8 @@ color: var(--Pressed-state);
     position: relative;
 }
 .modal-input{
-    width: 100%;
+    width: 360px;
+    height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding-left: 38px;
@@ -601,6 +601,8 @@ color: var(--Pressed-state);
 .modal-textarea{
     width: 360px;
     height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: var(--modal-bgr);
@@ -610,6 +612,11 @@ color: var(--Pressed-state);
     display: block;
     outline: transparent;
     transition: border-color var(--transition-duration-and-fund);
+}
+.modal-textarea::placeholder{
+    font-size: 12px;
+    line-height: 1.17;
+    color: rgba(46, 47, 66, 0.4);
 }
 .modal-textarea:hover,
 .modal-textarea:focus{
